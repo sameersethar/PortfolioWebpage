@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sameer's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo" style="text-align:center;"><p style="white-space: pre;">Sameer                                                Projects</p></div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li> <!-- FIX: matches section id -->
+      <li><a href="certificate.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <div class="projects-grid">
+      <div class="project">
+        <!-- MOBILE: playsinline prevents forced fullscreen on phones -->
+        <video class="project-video" controls poster="ecommerce-thumbnail.png" muted autoplay playsinline loop>
+          <source src="projectVideo/eccommerce.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Mobile E-Commerce App (Java Swing)</h3>
+        <p>Java-based desktop app with GUI for purchasing mobiles.</p>
+        <div class="buttons">
+          <a href="projectVideo/eccommerce.mp4" class="btn" target="_blank" rel="noopener">View Full Demo</a>
+          <a href="#" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <video class="project-video" controls poster="hotel-thumbnail.png" muted autoplay playsinline loop>
+          <source src="projectVideo/hotel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Hotel Management System (C++ CLI)</h3>
+        <p>Command-line hotel system for rooms, billing, and restaurant menu.</p>
+        <div class="buttons">
+          <a href="projectVideo/hotel.mp4" class="btn" target="_blank" rel="noopener">View Full Demo</a>
+          <a href="#" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  <footer>
+    <p>&copy; 2025 Sameer. All rights reserved.</p>
+  </footer>
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- INIT (also toggles mobile menu) -->
+  <script src="typedInit.js"></script>
+
+</body>
+</html>

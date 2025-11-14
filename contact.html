@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sameer's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="portfolio.css" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("19g_1lzlJExQkrdTE");
+    })();
+  </script> 
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><p style="white-space: pre;">Sameer                                                Contact</p></div>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certificate.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="contact container" id="contact">
+    <h2>Contact Me</h2>
+
+    <form class="contactform" onsubmit="sendEmail(event)">
+      <input type="text" id="name" name="name" placeholder="Name" required>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="socialLinks">
+      <a href="mailto:sameersethar907@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/sameer-sethar" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sameersethar" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sameer. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="typedInit.js"></script>
+
+
+  <!-- WORKING EMAIL SCRIPT -->
+  <script>
+    function sendEmail(event) {
+      event.preventDefault(); 
+
+      const params = {
+        name: document.querySelector("#name").value,
+        email: document.querySelector("#email").value,
+        subject: document.querySelector("#subject").value,
+        message: document.querySelector("#message").value
+      };
+
+      emailjs
+        .send("service_x3yp83j", "template_wm1nqxk", params)
+        .then(() => {
+          alert("Your message has been sent successfully!");
+          document.querySelector(".contactform").reset();
+        })
+        .catch((error) => {
+          console.error("Email error:", error);
+          alert("Failed to send message. Please try again.");
+        });
+    }
+  </script>
+
+</body>
+</html>

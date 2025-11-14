@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sameer's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><p style="white-space: pre;">Sameer                                                     Skills</p></div>
+
+    <!-- MOBILE: hamburger button -->
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li> <!-- FIX: matches section id -->
+      <li><a href="certificate.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- Skills -->
+  <section class="skills container" id="skills">
+  <div class="container" style="height: 100vh;">
+    <div>
+      <div class="skillSection">
+      <div class="card"><i class="fa-solid fa-laptop-code"></i> C++</div>
+      <div class="card"><i class="fab fa-java"></i> Java</div>
+      <div class="card"><i class="fab fa-python"></i>Python</div>
+      <div class="card"><i class="fa-solid fa-database"></i> MySQL</div>
+      <div class="card"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="card"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <br>
+      <div class="card"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="card"><i class="fab fa-react"></i> React</div>
+      <div class="card"><i class="fas fa-code-branch"></i> Git</div>
+      <div class="card"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+    </div>
+  </div>
+   
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Sameer. All rights reserved.</p>
+  </footer>
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- INIT (also toggles mobile menu) -->
+  <script src="typedInit.js"></script>
+
+
+
+</body>
+</html>
