@@ -6,7 +6,7 @@ html { scroll-behavior: smooth; } /* nicer anchor jumps */
 body {
   font-family: 'Segoe UI', sans-serif;
   /* keep your brand gradient */
-  background: linear-gradient(to top right, #2e1433, #ad39a8);
+  background: linear-gradient(to top right, #2e1433, #a73ea1);
   color: white;
 }
 

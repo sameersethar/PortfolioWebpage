@@ -1,26 +1,10 @@
-/* Typed headline - keep only ONE init (you had it duplicated) */
-new Typed("#typed", {
-  strings: ["Web Developer", "Programmer"],
-  typeSpeed: 100,
-  backSpeed: 50,
-  loop: true
-});
-
-/* Mobile menu toggle */
-const toggleBtn = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav-links");
-
-if (toggleBtn && nav) {
-  toggleBtn.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    toggleBtn.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  // Close menu when a link is clicked (nice on mobile)
-  nav.querySelectorAll("a").forEach(a => {
-    a.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggleBtn.setAttribute("aria-expanded", "false");
-    });
+/* Typed headline - initialize only when the element exists and Typed.js is loaded */
+const typedEl = document.querySelector("#typed");
+if (typedEl && typeof Typed !== "undefined") {
+  new Typed("#typed", {
+    strings: ["Web Developer", "Programmer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
   });
 }
