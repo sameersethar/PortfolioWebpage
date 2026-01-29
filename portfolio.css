@@ -6,7 +6,7 @@ html { scroll-behavior: smooth; } /* nicer anchor jumps */
 body {
   font-family: 'Segoe UI', sans-serif;
   /* keep your brand gradient */
-  background: linear-gradient(to top right, #2e1433, #a73ea1);
+  background: linear-gradient(to top right, #2e1433, #7a2e77, #fd70ea);
   color: white;
 }
 
@@ -116,7 +116,7 @@ section { padding: 4rem 2rem; }
   transition: transform 0.3s, background 0.3s, color 0.3s;
   cursor: default;
 }
-.card:hover { transform: scale(1.05); background: #fd70ea; color: #000; }
+.card:hover { transform: scale(1.05); background: #fa85ea; color: #000; box-shadow: 0 0 20px #f5b3ec; }
 .card i { display: block; font-size: 1.6rem; margin-bottom: 0.4rem; }
 
 /* ========== Projects Section ========== */
@@ -142,7 +142,7 @@ section { padding: 4rem 2rem; }
   margin-bottom: 1rem;
   box-shadow: 0 0 8px rgba(253, 112, 234, 0.4);
 }
-.project h3 { margin-bottom: 0.5rem; color: #fd70ea; }
+.project h3 { margin-bottom: 0.5rem; color: #db9ad3; }
 .project p { font-size: 1rem; margin-bottom: 1rem; }
 
 /* ========== Certificates Section ========== */
@@ -158,8 +158,9 @@ section { padding: 4rem 2rem; }
   box-shadow: 0 0 6px rgba(253, 112, 234, 0.5);
   transition: transform 0.3s;
 }
-.certificate-card:hover { transform: scale(1.02); }
-.certificate-card h3 { margin-bottom: 0.5rem; color: #fd70ea; }
+
+.certificate-card:hover { transform: scale(1.02); box-shadow: 0 0 20px #F5B3EC; }
+.certificate-card h3 { margin-bottom: 0.5rem; color: #db9ad3; }
 .certificate-card p { font-size: 1rem; margin-bottom: 1rem; }
 .certificate-img {
   width: 100%; border-radius: 10px; margin-bottom: 1rem;
@@ -176,7 +177,11 @@ section { padding: 4rem 2rem; }
   transition: all 0.3s;
   min-height: 44px; /* MOBILE: touch target */
 }
-.btn:hover, .btn-secondary:hover { background: #fd70ea; color: #fff; }
+.btn:hover, .btn-secondary:hover { 
+  background: #fd70ea;
+  color: #fff; 
+  box-shadow: 0 0 20px #F5B3EC;
+}
 
 /* ========== Contact Section ========== */
 .contact { text-align: center; font-size: 25px; margin-top: 80px; }
@@ -229,4 +234,17 @@ footer { background: #111; text-align: center; padding: 1rem; margin-top: 2rem; 
   section { padding: 3rem 1rem; }
   .self { justify-content: center; text-align: center; }
   .self-text { text-align: center; }
+}
+#resumeButton{
+  background-color: #fd70ea;
+   border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#resumeButton:hover {
+  background-color: #ebb6e4;
+  box-shadow: 0 0 20px #F5B3EC;
 }
