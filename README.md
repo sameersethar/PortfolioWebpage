@@ -1,4 +1,4 @@
-<img width="1349" height="629" alt="image" src="https://github.com/user-attachments/assets/2e661ae6-631a-4de9-8905-24dabffa3f55" />📁 Portfolio Website
+📁 Portfolio Website
    <br> A modern, responsive personal portfolio website built using HTML and CSS. 
     <br>Designed to showcase my skills, projects, and contact information with a clean UI and smooth user experience.<br>
 
