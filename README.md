@@ -16,7 +16,7 @@
     <br>CSS3 (Flexbox, Grid, Gradients).
 
 📷 Preview
-    ![Screenshot of Portfolio](https://github.com/sameersethar/Portfolio-Webpage/blob/main/coverpage.jpg?raw=true)
+    ![Screenshot of Portfolio](https://github.com/sameersethar/Portfolio-Webpage/blob/main/PortfolioWebpageScreenshot.jpg?raw=true)
 
 📌 Usage
   <br>To use or customize:
