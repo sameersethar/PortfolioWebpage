@@ -234,7 +234,7 @@ section { padding: 4rem 2rem; }
 }
 
 /* ========== Footer ========== */
-footer { background: #111; text-align: center; padding: 1rem; margin-top: 2rem;  position: fixed;}
+footer { background: #111; text-align: center; padding: 1rem; margin-top: 2rem;}
 
 /* ========== Mobile & Tablet Tweaks ========== */
 @media (max-width: 1024px) {
