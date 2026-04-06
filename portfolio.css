@@ -145,6 +145,7 @@ section { padding: 4rem 2rem; }
   border-radius: 12px;
   color: white;
   transition: transform 0.3s;
+  
 }
 .project:hover { transform: scale(1.05); 
   background: rgba(0, 255, 255, 0.377); 
