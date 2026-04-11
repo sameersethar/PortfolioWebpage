@@ -24,7 +24,7 @@
     <ul id="primary-nav" class="nav-links">
       <li><a href="index.html">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li> <!-- FIX: matches section id -->
+      <li><a href="#projects">Projects</a></li>
       <li><a href="certificate.html">Certificates</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -76,8 +76,55 @@
   </section>
 
 
+<!--projects section-->
+<section class="projects container" id="projects">
+   <div class="projects-grid">
+      <div class="project">
+        <!-- MOBILE: playsinline prevents forced fullscreen on phones -->
+        <video class="project-video" controls poster="ecommerce-thumbnail.png" muted autoplay playsinline loop>
+          <source src="projectVideo/eccommerce.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Mobile E-Commerce App (Java Swing)</h3>
+        <p>Java-based desktop app with GUI for purchasing mobiles.</p>
+        <div class="buttons" id="pbutton">
+          <a href="projectVideo/eccommerce.mp4" class="btn" target="_blank" rel="noopener">View Full Demo</a>
+          <a href="https://github.com/sameersethar/E-commerce-Java.git" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <video class="project-video" controls poster="hotel-thumbnail.png" muted autoplay playsinline loop>
+          <source src="projectVideo/hotel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Hotel Management System (C++ CLI)</h3>
+        <p>Command-line hotel system for rooms, billing, and restaurant menu.</p>
+        <div class="buttons" id="pbutton">
+          <a href="projectVideo/hotel.mp4" class="btn" target="_blank" rel="noopener">View Full Demo</a>
+          <a href="https://github.com/sameersethar/Hotel-Management.git" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <video class="project-video" controls poster="library-thumbnail.png" muted autoplay playsinline loop>
+          <source src="projectVideo/Library.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>LibraryManagement System (Python)</h3>
+        <p>Command-line Library Management system for Admin and User. Admin has the overall controls while User can Borrow and Return Book. Also, data is stored in a JSON file using file handling.</p>
+        <div class="buttons" id="pbutton">
+          <a href="projectVideo/Library.mp4" class="btn" target="_blank" rel="noopener">View Full Demo</a>
+          <a href="https://github.com/sameersethar/Library-Management-System.git" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
 
 
+    </div>
+
+</section>
+  
+  
 
   
   <footer>
