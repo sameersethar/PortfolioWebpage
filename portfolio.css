@@ -182,7 +182,7 @@ section { padding: 4rem 2rem; }
   margin-left: 1rem;
 }
 
-.certificate-card:hover { transform: scale(1.05); box-shadow: 0 0 20px #0ff; }
+.certificate-card:hover { transform: scale(1.05); box-shadow: 0 0 20px #0ff; color:#000; }
 .certificate-card h3 { margin-bottom: 0.5rem; color: #0ff; }
 .certificate-card p { font-size: 1rem; margin-bottom: 1rem; }
 .certificate-img {
