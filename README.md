@@ -13,10 +13,11 @@
 
 🚀 Tech Stack<br>
     HTML5
-    <br>CSS3 (Flexbox, Grid, Gradients).
+    <br>CSS3 (Flexbox, Grid, Gradients).<br>
 👉 Visit Here<br>
     Link: https://sameersethar.me
 <br>
 
 📷 Preview
     ![Screenshot of Portfolio](https://github.com/sameersethar/Portfolio-Webpage/blob/main/PortfolioWebpageScreenshot.jpeg?raw=true)
+
